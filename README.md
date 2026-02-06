@@ -1,4 +1,4 @@
-# Lorton 10k race (lorton-website)
+# Lorton 10k race - North England
 
 charity website for the lorton 10k race
 
