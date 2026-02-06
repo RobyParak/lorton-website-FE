@@ -1,131 +1,110 @@
 <template>
   <q-page>
-    <!-- Hero Section -->
+    <!-- Hero Section with Clean Design -->
     <section class="hero-section">
-      <div class="hero-overlay">
+      <div class="hero-content-wrapper">
         <div class="hero-content">
+          <!-- Logo -->
           <img 
             src="../assets/logos/lorton-logo.png" 
             alt="Lorton 10K Logo" 
-            class="hero-logo q-mb-md"
+            class="hero-logo"
           />
-          <h1 class="text-h1 text-weight-bold text-white q-mb-md">
-            Lorton 10K Race
-          </h1>
-          <p class="text-h4 text-white q-mb-lg">
-            Fundraising for the Friends of Lorton School
-          </p>
-          <div class="sponsor-section q-mt-xl">
-            <p class="text-h6 text-white q-mb-sm">Sponsored by</p>
-            <img 
-              src="../assets/logos/paramo-logo.png" 
-              alt="Páramo Logo" 
-              class="sponsor-logo"
-            />
+          
+          <!-- Title -->
+          <h1 class="hero-title">Lorton 10K Race</h1>
+          <p class="hero-subtitle">Fundraising for the Friends of Lorton School</p>
+
+          <!-- Primary CTA -->
+          <q-btn
+            unelevated
+            size="xl"
+            color="primary"
+            label="Register Now"
+            icon-right="arrow_forward"
+            class="cta-button"
+            href="https://www.eventsupnorth.co.uk/event/1713"
+            target="_blank"
+            no-caps
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Details Section - Clean White Card -->
+    <section class="details-section">
+      <div class="container">
+        <div class="details-card">
+          <div class="details-grid">
+            <div class="detail-item">
+              <q-icon name="event" size="32px" color="primary" />
+              <div class="detail-content">
+                <div class="detail-label">Date</div>
+                <div class="detail-value">Saturday, 18th April 2026</div>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <q-icon name="schedule" size="32px" color="primary" />
+              <div class="detail-content">
+                <div class="detail-label">Time</div>
+                <div class="detail-value">10:00 AM</div>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <q-icon name="place" size="32px" color="primary" />
+              <div class="detail-content">
+                <div class="detail-label">Location</div>
+                <div class="detail-value">Lorton Primary School</div>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <q-icon name="info" size="32px" color="primary" />
+              <div class="detail-content">
+                <div class="detail-label">Requirements</div>
+                <div class="detail-value">Age 15+ • All abilities welcome</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Event Details Card -->
-    <section class="details-section q-py-xl">
+    <!-- Footer Section -->
+    <section class="footer-section">
       <div class="container">
-        <q-card class="event-card" elevated>
-          <q-card-section class="text-center">
-            <div class="text-h3 text-weight-bold text-primary q-mb-lg">
-              Event Details
-            </div>
-            
-            <div class="details-grid">
-              <div class="detail-item">
-                <q-icon name="event" size="48px" color="primary" class="q-mb-sm" />
-                <div class="text-h6 text-weight-medium">Date</div>
-                <div class="text-body1 text-grey-7">Saturday, 18th of April 2026</div>
-              </div>
-
-              <div class="detail-item">
-                <q-icon name="schedule" size="48px" color="primary" class="q-mb-sm" />
-                <div class="text-h6 text-weight-medium">Time</div>
-                <div class="text-body1 text-grey-7">10:00 AM</div>
-              </div>
-
-              <div class="detail-item">
-                <q-icon name="place" size="48px" color="primary" class="q-mb-sm" />
-                <div class="text-h6 text-weight-medium">Location</div>
-                <div class="text-body1 text-grey-7">Lorton Primary School</div>
-              </div>
-
-              <div class="detail-item">
-                <q-icon name="info" size="48px" color="primary" class="q-mb-sm" />
-                <div class="text-h6 text-weight-medium">Requirements</div>
-                <div class="text-body1 text-grey-7">
-                  Minimum age: 15<br>
-                  All running abilities welcomed
-                </div>
-              </div>
-            </div>
-          </q-card-section>
-        </q-card>
-      </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="cta-section q-py-xl">
-      <div class="container text-center">
-        <q-btn
-          unelevated
-          size="xl"
-          color="positive"
-          label="Enter Race Now"
-          icon="directions_run"
-          class="cta-button q-mb-lg"
-          href="https://www.eventsupnorth.co.uk"
-          target="_blank"
-          no-caps
-        />
-        
-        <div class="social-text text-h6 text-grey-7 q-mt-lg">
-          Follow us on 
-          <span class="text-weight-bold text-primary">Facebook</span> and 
-          <span class="text-weight-bold text-primary">Instagram</span> 
-          for updates
+        <!-- Sponsor -->
+        <div class="sponsor-wrapper">
+          <span class="sponsor-label">Proudly sponsored by</span>
+          <img 
+            src="../assets/logos/paramo-logo.png" 
+            alt="Páramo Logo" 
+            class="sponsor-logo"
+          />
         </div>
+
+        <div class="footer-divider"></div>
+
+        <!-- Volunteer & Social -->
+        <div class="footer-info">
+          <p class="footer-text">
+            <q-icon name="volunteer_activism" size="18px" class="q-mr-xs" />
+            Interested in volunteering? 
+            <a href="mailto:catherine@terracefarm.co.uk" class="footer-link">Contact Catherine Armstrong</a>
+          </p>
+          <p class="footer-text">
+            Follow us on <strong>Facebook</strong> and <strong>Instagram</strong> for updates
+          </p>
+        </div>
+
+        <!-- Copyright -->
+        <p class="copyright">
+          © 2026 Lorton 10K Race • Supporting Friends of Lorton School
+        </p>
       </div>
     </section>
-
-    <!-- Volunteer Section -->
-    <section class="volunteer-section q-py-xl">
-      <div class="container">
-        <q-card flat bordered class="volunteer-card">
-          <q-card-section class="text-center">
-            <q-icon name="volunteer_activism" size="64px" color="secondary" class="q-mb-md" />
-            <div class="text-h5 text-weight-medium q-mb-md">
-              Volunteer with Us
-            </div>
-            <p class="text-body1 text-grey-8 q-mb-md">
-              Anyone from the community interested in volunteering on the day with marshalling, 
-              please contact Catherine Armstrong.
-            </p>
-            <q-btn
-              flat
-              color="secondary"
-              label="catherine@terracefarm.co.uk"
-              icon="email"
-              href="mailto:catherine@terracefarm.co.uk"
-              no-caps
-              class="q-mt-sm"
-            />
-          </q-card-section>
-        </q-card>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer q-py-md text-center">
-      <div class="text-body2 text-grey-6">
-        © 2026 Lorton 10K Race - Supporting Friends of Lorton School
-      </div>
-    </footer>
   </q-page>
 </template>
 
@@ -138,150 +117,191 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-// Hero Section
+// Hero Section - Clean with subtle background
 .hero-section {
   position: relative;
-  height: 100vh;
-  min-height: 600px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  min-height: 65vh;
+  background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.96)),
     url('https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=1920&q=80');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.hero-overlay {
+.hero-content-wrapper {
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(2px);
+  max-width: 1200px;
+  padding: 4rem 2rem;
 }
 
 .hero-content {
   text-align: center;
-  padding: 2rem;
-  animation: fadeInUp 1s ease-out;
+  animation: fadeIn 1s ease-out;
 }
 
 .hero-logo {
-  max-width: 200px;
+  max-width: 160px;
   height: auto;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  margin-bottom: 2rem;
 }
 
-.sponsor-section {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 1.5rem 3rem;
-  display: inline-block;
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
-.sponsor-logo {
-  max-width: 180px;
-  height: auto;
-  filter: brightness(0) invert(1);
-}
-
-// Container
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-// Details Section
-.details-section {
-  background: linear-gradient(to bottom, #f5f5f5, #ffffff);
-}
-
-.event-card {
-  border-radius: 24px;
-  padding: 2rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-}
-
-.details-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.detail-item {
-  padding: 1.5rem;
-  transition: transform 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-5px);
-  }
-}
-
-// CTA Section
-.cta-section {
-  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-  position: relative;
-  overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
-    animation: float 20s linear infinite;
-  }
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin: 0 0 3rem 0;
+  font-weight: 400;
 }
 
 .cta-button {
   font-size: 1.25rem;
-  padding: 1.5rem 3rem;
-  border-radius: 50px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.3);
   transition: all 0.3s ease;
   
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(25, 118, 210, 0.4);
   }
 }
 
-.social-text {
-  position: relative;
-  z-index: 1;
-}
-
-// Volunteer Section
-.volunteer-section {
+// Details Section - Clean Card Layout
+.details-section {
   background: #fafafa;
+  padding: 3rem 1rem;
 }
 
-.volunteer-card {
-  border-radius: 16px;
-  max-width: 800px;
+.container {
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-// Footer
-.footer {
-  background: #263238;
-  color: white;
+.details-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.detail-content {
+  flex: 1;
+}
+
+.detail-label {
+  font-size: 0.875rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.detail-value {
+  font-size: 1.125rem;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+// Footer Section
+.footer-section {
+  background: white;
+  padding: 2.5rem 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.sponsor-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sponsor-label {
+  font-size: 0.875rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.sponsor-logo {
+  max-width: 140px;
+  height: auto;
+}
+
+.footer-divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.footer-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.footer-link {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 600;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #999;
+  margin: 0;
 }
 
 // Animations
-@keyframes fadeInUp {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -289,28 +309,24 @@ export default defineComponent({
   }
 }
 
-@keyframes float {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100px);
-  }
-}
-
 // Responsive Design
 @media (max-width: 768px) {
-  .hero-section {
-    height: 80vh;
-    min-height: 500px;
-  }
-  
-  .hero-content h1 {
+  .hero-title {
     font-size: 2.5rem;
   }
   
-  .hero-content p {
-    font-size: 1.5rem;
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    font-size: 1.125rem;
+    padding: 0.875rem 2rem;
+  }
+  
+  .details-card {
+    padding: 1.5rem;
   }
   
   .details-grid {
@@ -318,27 +334,38 @@ export default defineComponent({
     gap: 1.5rem;
   }
   
-  .cta-button {
-    font-size: 1rem;
-    padding: 1rem 2rem;
-  }
-  
-  .sponsor-section {
-    padding: 1rem 2rem;
+  .sponsor-wrapper {
+    flex-direction: column;
+    gap: 0.75rem;
   }
 }
 
 @media (max-width: 480px) {
   .hero-logo {
-    max-width: 150px;
+    max-width: 120px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 320px;
   }
   
   .sponsor-logo {
-    max-width: 140px;
+    max-width: 120px;
   }
   
-  .event-card {
-    padding: 1rem;
+  .footer-text {
+    flex-direction: column;
+    gap: 0.25rem;
   }
 }
 </style>
+
